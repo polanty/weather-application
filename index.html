@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<script defer src="./weatherapi.js"></script>
+<script defer src="./UI.js"></script>
+<script defer src="./main.js"></script>
+<body>
+    <div class="main-container"> 
+         <div class="main-container-cover"></div>
+        <div class="first__section">
+          <input type="text" id="searchinput" placeholder="Enter your city...">
+          <button class="main-button">Submit</button>
+            <h1 id="temperature"></h1 id="temp-icon">
+            <h6 id="country-name"></h6>
+            <p id="description"></p>
+        </div>
+          <div id="temp-info">
+              <div>
+                  <h5 id= "humidity"></h5>
+                <h6>Humidity</h6>
+              </div>
+              <div>
+                <h5 id= "visibility"></h5>
+              <h6>visibility</h6>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
