@@ -10,9 +10,9 @@ class weatherapi {
       `${this.base}weather?q=${this.cityName}&appid=${this.apiKey}`
     );
     console.log(response);
-    if (!response.ok) {
-      throw new Error("This country Cannot be found");
-    }
+    if (!response.ok)
+      throw new Error(`This country Cannot be found ${response.status}`);
+
     const reponseData = await response.json();
 
     return reponseData;
